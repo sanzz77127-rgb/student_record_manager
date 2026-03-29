@@ -1,0 +1,35 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container mt-5">
+    <div class="alert alert-primary">
+        <h3>Add New Record</h3>
+    </div>
+
+    <div class="container w-50 shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+        <form action="/new_record" method="POST">
+            <div class="mb-3">
+                <label class="form-label">Enter Your Name</label>
+                <input type="text" name="name" class="form-control" required /> 
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Enter Your Email</label>
+                <input type="email" name="email" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Enter Your City</label>
+                <input type="text" name="city" class="form-control" required />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Enter Your Contact Number</label>
+                <input type="text" name="contact" class="form-control" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+    </div>
+</div>
+
+<%- include('./base/footer.ejs') %>

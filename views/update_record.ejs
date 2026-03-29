@@ -1,0 +1,40 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container mt-5">
+  <div class="alert alert-info text-center">
+    <h3>Update Student Record</h3>
+  </div>
+
+  <div class="container w-50 shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+    <form action="/update/<%= record._id %>" method="POST">
+      
+      <div class="mb-3">
+        <label class="form-label">Update Name</label>
+        <input type="text" name="name" class="form-control" value="<%= record.name %>" required /> 
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Update Email</label>
+        <input type="email" name="email" class="form-control" value="<%= record.email %>" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Update City</label>
+        <input type="text" name="city" class="form-control" value="<%= record.city %>" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Update Contact Number</label>
+        <input type="text" name="contact" class="form-control" value="<%= record.contact %>" required />
+      </div>
+
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-success">Save Changes</button>
+        <a href="/" class="btn btn-secondary">Cancel</a>
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+<%- include('./base/footer.ejs') %>
