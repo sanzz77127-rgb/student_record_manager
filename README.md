@@ -1,5 +1,7 @@
 # 🎓 Student Record Manager
 
+**🌐 Live Demo:** [View the Live Website](https://student-record-manager-sigma.vercel.app)
+
 A full-stack web application built for managing student data. This project uses **Node.js**, **Express**, and **MongoDB** (via Mongoose) to perform CRUD operations.
 
 ## 📁 Project Structure
